@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume | Trần Đình Hùng</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* CSS để làm đẹp trang web */
+        :root {
+            --primary-color: #2563eb;
+            --text-color: #1f2937;
+            --bg-color: #f3f4f6;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        header {
+            border-bottom: 2px solid var(--bg-color);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        h1 { margin: 0; color: var(--primary-color); font-size: 2.5rem; }
+        .subtitle { color: #6b7280; font-size: 1.1rem; margin-top: 5px; }
+        
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 15px;
+            font-size: 0.9rem;
+        }
+
+        section { margin-bottom: 30px; }
+        h2 { 
+            border-left: 4px solid var(--primary-color);
+            padding-left: 15px;
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .item { margin-bottom: 20px; }
+        .item-header { display: flex; justify-content: space-between; font-weight: 600; }
+        .date { color: #6b7280; font-weight: normal; }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .skill-badge {
+            background: var(--bg-color);
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            text-align: center;
+        }
+
+        footer { text-align: center; margin-top: 40px; color: #9ca3af; font-size: 0.8rem; }
+
+        @media (max-width: 600px) {
+            .contact-info { flex-direction: column; gap: 5px; }
+            .item-header { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Trần Đình Hùng</h1>
+        <div class="subtitle">Sinh viên Khoa học máy tính / Web Developer</div>
+        <div class="contact-info">
+            <span>📧 email@example.com</span>
+            <span>📱 090 123 4567</span>
+            <span>📍 TP. Hồ Chí Minh</span>
+        </div>
+    </header>
+
+    <section id="about">
+        <h2>Giới thiệu</h2>
+        <p>Tôi là một người đam mê công nghệ và lập trình, luôn mong muốn học hỏi những công nghệ mới nhất để tạo ra những sản phẩm có ích cho cộng đồng. Hiện tôi đang tập trung phát triển kỹ năng về HTML, CSS, JavaScript và GitHub.</p>
+    </section>
+
+    <section id="experience">
+        <h2>Kinh nghiệm / Dự án</h2>
+        <div class="item">
+            <div class="item-header">
+                <span>Dự án Web Cá Nhân (GitHub Pages)</span>
+                <span class="date">2024 - Hiện tại</span>
+            </div>
+            <ul>
+                <li>Xây dựng trang web giới thiệu bản thân bằng HTML/CSS.</li>
+                <li>Quản lý mã nguồn thông qua hệ thống kiểm soát phiên bản Git.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="education">
+        <h2>Học vấn</h2>
+        <div class="item">
+            <div class="item-header">
+                <span>Đại học Công nghệ thông tin</span>
+                <span class="date">2021 - 2025</span>
+            </div>
+            <p>Chuyên ngành: Phát triển phần mềm</p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Kỹ năng</h2>
+        <div class="skills-grid">
+            <div class="skill-badge">HTML5 / CSS3</div>
+            <div class="skill-badge">JavaScript</div>
+            <div class="skill-badge">Git & GitHub</div>
+            <div class="skill-badge">UI/UX Design</div>
+            <div class="skill-badge">English</div>
+            <div class="skill-badge">Teamwork</div>
+        </div>
+    </section>
+</div>
+
+<footer>
+    © 2024 Created by Tran Dinh Hung using GitHub Pages
+</footer>
+
+</body>
+</html>
